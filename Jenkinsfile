@@ -15,3 +15,4 @@ node{
      archiveArtifacts 'target/*.war'
  }
 }
+
