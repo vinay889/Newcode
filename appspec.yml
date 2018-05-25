@@ -2,11 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/elb-test
+    destination: /home/ubuntu/awsdeploy
 hooks:
   ApplicationStop:
     - location: deregister_from_elb.sh
-    - location: stop_httpd.sh
+    - location: stop_tomcat.sh
   ApplicationStart:
-    - location: start_httpd.sh
+    - location: start_tomcat.sh
     - location: register_with_elb.sh
