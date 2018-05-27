@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /opt/apache-tomcat-7.0.85/bin
+cd /home/ubuntu/apache-tomcat-7.0.88/bin
 sudo ./shutdown.sh
