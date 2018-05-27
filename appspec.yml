@@ -5,8 +5,8 @@ files:
     destination: /home/ubuntu
 hooks:
   ApplicationStop:
-    - location: stop_tomcat.sh
+    - location: ./stop_tomcat.sh
   install:
-    - location: install.sh
+    - location: ./install.sh
   ApplicationStart:
-    - location: start_tomcat.sh
+    - location: ./start_tomcat.sh
